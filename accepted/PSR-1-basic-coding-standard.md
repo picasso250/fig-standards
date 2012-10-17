@@ -1,7 +1,8 @@
-Basic Coding Standard
+基本编码规范
 =====================
 
 This section of the standard comprises what should be considered the standard
+
 coding elements that are required to ensure a high level of technical
 interoperability between shared PHP code.
 
