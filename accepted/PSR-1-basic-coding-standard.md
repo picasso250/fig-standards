@@ -144,7 +144,7 @@ class Foo
 - `$camelCase`
 - `$under_score` 
 
-无论何种命名习惯，都应在自己的领域中保持一致。所谓领域可能是 vendor-level, package-level, class-level, 也可能是 method-level.
+无论何种命名习惯，都应在自己的变量作用域中保持一致。所谓变量作用域可能是 vendor-level, package-level, class-level, 也可能是 method-level.
 
 ### 4.3. 方法
 
