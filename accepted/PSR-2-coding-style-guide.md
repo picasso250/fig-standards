@@ -97,30 +97,50 @@ Code MUST follow all rules outlined in [PSR-1][].
 
 All PHP files MUST use the Unix LF (linefeed) line ending.
 
+所有的 PHP 文件须以 Unix LF 结尾。
+
 All PHP files MUST end with a single blank line.
 
+所有 PHP 文件末尾须是空行。
+
 The closing `?>` tag MUST be omitted from files containing only PHP.
+
+如文件只含 PHP 代码，则 `?>` 标签须省略。
 
 ### 2.3. Lines
 
 There MUST NOT be a hard limit on line length.
 
+不得硬性规定最大行长。
+
 The soft limit on line length MUST be 120 characters; automated style checkers
 MUST warn but MUST NOT error at the soft limit.
+
+柔性极限是 120 个字符，如超出，各辅助工具（风格检查器）只需警告，不得报错。
 
 Lines SHOULD NOT be longer than 80 characters; lines longer than that SHOULD
 be split into multiple subsequent lines of no more than 80 characters each.
 
+每行长度最好不要超过 80 个字符
+
 There MUST NOT be trailing whitespace at the end of non-blank lines.
+
+非空行的末尾不得有空格。
 
 Blank lines MAY be added to improve readability and to indicate related
 blocks of code.
 
+可添加空行以养眼（增强可阅性）或者区分相关代码。
+
 There MUST NOT be more than one statement per line.
 
-### 2.4. Indenting
+每行不得超过一个语句。
+
+### 2.4. Indenting 缩进
 
 Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting.
+
+以 4 个空格做缩进，不得以制表符做缩进。
 
 > N.b.: Using only spaces, and not mixing spaces with tabs, helps to avoid
 > problems with diffs, patches, history, and annotations. The use of spaces
@@ -131,16 +151,22 @@ Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting.
 
 PHP [keywords][] MUST be in lower case.
 
+PHP [keywords][] 须使用小写字母。
+
 The PHP constants `true`, `false`, and `null` MUST be in lower case.
+
+PHP 常量 `true`, `false`, and `null` 须使用小写字母。
 
 [keywords]: http://php.net/manual/en/reserved.keywords.php
 
 
 
-3. Namespace and Use Declarations
+3. Namespace and Use Declarations 命名空间和使用声明
 ---------------------------------
 
 When present, there MUST be one blank line after the `namespace` declaration.
+
+声明 `namespace` 时，下空一行。
 
 When present, all `use` declarations MUST go after the `namespace`
 declaration.
@@ -212,16 +238,24 @@ class ClassName extends ParentClass implements
 }
 ```
 
-### 4.2. Properties
+### 4.2. Properties 属性
 
 Visibility MUST be declared on all properties.
 
+所有属性都须指明可见性。
+
 The `var` keyword MUST NOT be used to declare a property.
+
+不得使用 `var` 声明属性。
 
 There MUST NOT be more than one property declared per statement.
 
+每个语句不得声明超过一个的属性。
+
 Property names SHOULD NOT be prefixed with a single underscore to indicate
 protected or private visibility.
+
+属性名不应该前加下划线来指明 protected 或 private。
 
 A property declaration looks like the following.
 
