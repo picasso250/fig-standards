@@ -386,6 +386,8 @@ Argument lists MAY be split across multiple lines, where each subsequent line
 is indented once. When doing so, the first item in the list MUST be on the
 next line, and there MUST be only one argument per line.
 
+参数可分行，若如此做，第一个参数必须另起一行，且每行一个参数。
+
 ```php
 <?php
 $foo->bar(
@@ -433,6 +435,7 @@ if ($expr1) {
 The keyword `elseif` SHOULD be used instead of `else if` so that all control
 keywords look like single words.
 
+应使用 `elseif` 而非 `else if`。
 
 ### 5.2. `switch`, `case`
 
@@ -441,6 +444,8 @@ parentheses, spaces, and braces. The `case` statement MUST be indented once
 from `switch`, and the `break` keyword (or other terminating keyword) MUST be
 indented at the same level as the `case` body. There MUST be a comment such as
 `// no break` when fall-through is intentional in a non-empty `case` body.
+
+如遇非空 `case`，应解释之。
 
 ```php
 <?php
@@ -489,6 +494,8 @@ do {
 
 A `for` statement looks like the following. Note the placement of parentheses,
 spaces, and braces.
+
+例如下：
 
 ```php
 <?php
